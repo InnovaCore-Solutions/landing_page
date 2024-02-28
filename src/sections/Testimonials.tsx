@@ -8,7 +8,6 @@ import { GradientText } from "../components/GradientText";
 import { Section } from "../components/Section";
 import { Title } from "../components/Title";
 
-// Built with Vivid (https://vivid.lol) ⚡️
 
 const TestimonialImage = ({ src, alt }: { src: string; alt: string }) => {
   return (
@@ -79,35 +78,35 @@ export const Testimonials = () => {
       <div className="gap-20 md:gap-6 col md:row">
         {/* Testimonial 1 */}
         <Testimonial>
-          <TestimonialImage src="/images/will.jpg" alt="Will Gao" />
+          <TestimonialImage src="/images/valentin.jpg" alt="Valentin Palonsky" />
           <TestimonialText
             quote="When I first clicked on a component and its code popped up — magical"
-            name="Will Gao"
+            name="Valentin Palonsky"
             title="Technical PM"
             handle="Meta"
-            link="https://www.linkedin.com/in/willgao99/"
+            link="https://www.linkedin.com/in/valent%C3%ADn-guitart-palonsky-637735145/"
           />
         </Testimonial>
         {/* Testimonial 2 */}
         <Testimonial>
-          <TestimonialImage src="/images/veljko.jpg" alt="Veljko Muratovic" />
+          <TestimonialImage src="/images/fran.jpg" alt="Fran Martín" />
           <TestimonialText
             quote="I'm going to have to make the switch to Chrome. Just to keep using Vivid."
-            name="Veljko Muratovic"
-            title="Front End Dev"
+            name="Fran Martín"
+            title="Founder" 
             handle="Freelance"
-            link="https://www.linkedin.com/in/veljko-muratovic/"
+            link="https://www.linkedin.com/in/fran-martin-ag/"
           />
         </Testimonial>
         {/* Testimonial 3 */}
         <Testimonial>
-          <TestimonialImage src="/images/tejal.png" alt="Tejal Patwardhan" />
+          <TestimonialImage src="/images/victor.png" alt="Victor Gómez" />
           <TestimonialText
             quote="Vivid has changed the game! It's already saved me hours of development time"
-            name="Tejal Patwardhan"
-            title="Founder"
+            name="Victor Gómez"
+            title="Senior Developer"
             handle="Martingale"
-            link="https://martingalelabs.com/"
+            link="https://www.linkedin.com/in/valent%C3%ADn-guitart-palonsky-637735145/"
           />
         </Testimonial>
       </div>

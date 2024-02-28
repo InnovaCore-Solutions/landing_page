@@ -1,10 +1,10 @@
-import { Features } from "../src/sections/Features";
 import { FeatureBlocks } from "../src/sections/FeatureBlocks";
 import { Footer } from "../src/sections/Footer";
 import { Header } from "../src/sections/Header";
 import { Hero } from "../src/sections/Hero";
-import { Newsletter } from "../src/sections/Newsletter";
+import { Contact } from "../src/sections/Contact";
 import { Testimonials } from "../src/sections/Testimonials";
+import { AboutUs } from "../src/sections/AboutUs";
 
 const Home = ({
   isDarkMode,
@@ -18,10 +18,10 @@ const Home = ({
       <Header isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       <main>
         <Hero />
-        <Features />
+        <AboutUs/>
         <FeatureBlocks />
         <Testimonials />
-        <Newsletter />
+        <Contact />
       </main>
       <Footer isDarkMode={isDarkMode} />
     </div>

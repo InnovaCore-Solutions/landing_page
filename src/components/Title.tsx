@@ -7,7 +7,7 @@ export const Title = (
   props: DetailedHTMLProps<
     HTMLAttributes<HTMLHeadingElement>,
     HTMLHeadingElement
-  > & { size: "lg" | "md" }
+  > & { size: "lg" | "md" | "xs" }
 ) => {
   const { size, className = "", ...htmlProps } = props;
 
@@ -24,11 +24,19 @@ export const Title = (
         className
       )}
     />
-  ) : (
+  ) : size === "md" ? (
     <h2
       {...headingProps}
       className={twMerge(
         "font-bold leading-tight tracking-tighter title-md",
+        className
+      )}
+    />
+  ) : (
+    <h2
+      {...headingProps}
+      className={twMerge(
+        "font-bold leading-tight tracking-tighter title-xs",
         className
       )}
     />
