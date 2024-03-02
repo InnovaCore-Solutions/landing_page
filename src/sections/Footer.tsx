@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { LinkButton } from "../components/LinkButton";
-
-// Built with Vivid (https://vivid.lol) ⚡️
+import { LinkedinButton } from "../components/LinkedinButton";
 
 export const Footer = ({ isDarkMode }: { isDarkMode: boolean }) => {
   return (
@@ -16,12 +15,13 @@ export const Footer = ({ isDarkMode }: { isDarkMode: boolean }) => {
           />
           <div className={`text-sm ${isDarkMode ? "text-dark" : "text-light"}`}>&copy; InnovaCore Solutions, Inc. 2024</div>
         </div>
-        <LinkButton
-          href="https://join.slack.com/t/vivid-jqa6824/shared_invite/zt-1f7tbxl86-wruO1aM7FYmEdNaOOnYCMQ"
-          aria-label="Join Slack"
-        >
-          Join our Slack!
-        </LinkButton>
+        <div className="ml-5">
+          <LinkedinButton 
+            isDarkMode={isDarkMode}
+            href="https://www.linkedin.com/in/fran-martin-ag/"
+            ariaLabel="LinkedIn"
+          />
+        </div>
       </div>
     </footer>
   );

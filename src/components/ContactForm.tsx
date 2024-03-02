@@ -5,6 +5,7 @@ import { twMerge } from "tailwind-merge";
 import { Button } from "./Button";
 import { Input } from "./Input";
 import { TextArea } from "./TextArea";
+import { ButtonSend } from "./ButtonSend";
 
 export const ContactForm = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
@@ -24,6 +25,8 @@ export const ContactForm = (
     setEmailSubmitted(true);
     const res = await axios.post("/api/waitlist", { email , nombre, mensaje});
     setEmail("");
+    setNombre("");
+    setMensaje("");
     window.alert(`Email "${res.data.email}" submitted!`);
   };
 
@@ -103,8 +106,7 @@ export const ContactForm = (
           </label>
           <div className="absolute top-0 w-[3.5rem] h-[2px] bg-strong left-3" />
         </div>
-
-        <Button type="submit">Enviar</Button>
+         <ButtonSend type="submit" />
       </form>
       <EmailMessage />
     </div>

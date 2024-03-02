@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useEffectOnce, useEventListener } from "usehooks-ts";
 
 import { Button } from "../components/Button";
-import { GradientText } from "../components/GradientText";
 import { LinkButton } from "../components/LinkButton";
 import { Moon, Sun } from "../svg/DarkModeIcons";
 
@@ -44,7 +43,7 @@ export const Header = ({
       <div className="items-center block gap-1 row">
         <Image
           src={isDarkMode ? "/images/logo_lblanco.png" : "/images/logo_lnegro.png"}
-          alt="Vivid logo"
+          alt="ICS logo"
           height="130"
           width="130"
         />
@@ -65,7 +64,10 @@ export const Header = ({
           <LinkButton href="/">Nosotros</LinkButton>
         </li>
         <li>
-          <LinkButton href="/">Unidades</LinkButton>
+          <LinkButton href="/">Servicios</LinkButton>
+        </li>
+        <li>
+          <LinkButton href="/">Equipo</LinkButton>
         </li>
         <li>
           <LinkButton href="/">Contacta</LinkButton>

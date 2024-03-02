@@ -72,7 +72,7 @@ export const Testimonials = () => {
         <Title size="md">
           <GradientText className="amber-red">Miembros</GradientText> del Equipo
         </Title>
-        <Details>Styling your web app has never been easier.</Details>
+        <Details>Conoce a los talentos detrás del éxito.</Details>
       </div>
       {/* Testimonials */}
       <div className="gap-20 md:gap-6 col md:row">
@@ -80,10 +80,10 @@ export const Testimonials = () => {
         <Testimonial>
           <TestimonialImage src="/images/valentin.jpg" alt="Valentin Palonsky" />
           <TestimonialText
-            quote="When I first clicked on a component and its code popped up — magical"
+            quote="Organización y estructura para guiar equipos hacia el logro de objetivos."
             name="Valentin Palonsky"
-            title="Technical PM"
-            handle="Meta"
+            title="Project"
+            handle="Manager"
             link="https://www.linkedin.com/in/valent%C3%ADn-guitart-palonsky-637735145/"
           />
         </Testimonial>
@@ -91,10 +91,10 @@ export const Testimonials = () => {
         <Testimonial>
           <TestimonialImage src="/images/fran.jpg" alt="Fran Martín" />
           <TestimonialText
-            quote="I'm going to have to make the switch to Chrome. Just to keep using Vivid."
+            quote="Forjando el camino hacia el éxito transformando ideas en realidad"
             name="Fran Martín"
-            title="Founder" 
-            handle="Freelance"
+            title="Fundador" 
+            handle="CEO"
             link="https://www.linkedin.com/in/fran-martin-ag/"
           />
         </Testimonial>
@@ -102,10 +102,10 @@ export const Testimonials = () => {
         <Testimonial>
           <TestimonialImage src="/images/victor.png" alt="Victor Gómez" />
           <TestimonialText
-            quote="Vivid has changed the game! It's already saved me hours of development time"
+            quote="Cree en ti mismo y en tus capacidades, no tengas miedo de tomar riesgos"
             name="Victor Gómez"
-            title="Senior Developer"
-            handle="Martingale"
+            title="Senior"
+            handle="Developer"
             link="https://www.linkedin.com/in/valent%C3%ADn-guitart-palonsky-637735145/"
           />
         </Testimonial>

@@ -84,26 +84,6 @@ const Text = ({
 export const AboutUs = () => {
   return (
     <>
-    {/* Feature 1 */}
-    {/* <FeatureSection grayer center>
-      <Text center>
-        <Title size="md">
-          <GradientText className="amber-red">
-            &quot;Just right&quot;
-          </GradientText>{" "}
-          in seconds.
-        </Title>
-        <Details>Test styling and update code right in your browser.</Details>
-      </Text>
-      <FeatureDemo
-        webmSrc="/videos/palette.webm"
-        mp4Src="/videos/ezgif-5-fc8ce8839c.mp4"
-        center
-        className="amber-red"
-        alt="A video showing Vivid's command palette functionality. The user iterates through previewed styles and applies one."
-      />
-    </FeatureSection> */}
-    {/* Feature 2 */}
     <FeatureSection right>
       <Text>
         <Title size="md">
@@ -131,24 +111,6 @@ export const AboutUs = () => {
         alt="Coding"
       />
     </FeatureSection>
-    {/* Feature 3 */}
-    {/* <FeatureSection grayer>
-      <Text>
-        <Title size="md">
-          <GradientText className="green-sky">Smart commands</GradientText>
-          <br /> cut the guesswork.
-        </Title>
-        <Details>
-          Vivid smart commands apply the right styles every time.
-        </Details>
-      </Text>
-      <FeatureDemo
-        webmSrc="/videos/center.webm"
-        mp4Src="/videos/center.mp4"
-        className="green-sky"
-        alt="A video showing Vivid's smart command functionality. By typing smart-center, the user centers all content on screen."
-      />
-    </FeatureSection> */}
   </>
   );
 };
