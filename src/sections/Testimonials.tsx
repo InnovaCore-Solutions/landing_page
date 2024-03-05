@@ -66,7 +66,7 @@ const Testimonial = ({ children }: { children: ReactNode }) => {
 
 export const Testimonials = () => {
   return (
-    <Section grayer className="gap-24 text-center">
+    <Section id="team" grayer className="z-20 gap-24 text-center">
       {/* Header */}
       <div className="gap-4 col">
         <Title size="md">

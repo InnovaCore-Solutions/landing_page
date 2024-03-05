@@ -7,8 +7,6 @@ import { Button } from "../components/Button";
 import { LinkButton } from "../components/LinkButton";
 import { Moon, Sun } from "../svg/DarkModeIcons";
 
-// Built with Vivid (https://vivid.lol) ⚡️
-
 export const Header = ({
   isDarkMode,
   toggleDarkMode,
@@ -30,12 +28,15 @@ export const Header = ({
   // Clean up stale dark mode
   useEffectOnce(() => setReloaded(true));
 
-  const goToEmail = () => {
+  const goToContact = () => {
+    const footerHeight = 1100; // Altura del footer en píxeles
+    const scrollToPosition = (document.documentElement.scrollHeight - footerHeight);
     window.scrollTo({
-      top: 0,
+      top: scrollToPosition,
       behavior: "smooth",
     });
   };
+
 
 
   const Logo = ({ isDarkMode }: { isDarkMode: boolean }) => (
@@ -47,9 +48,6 @@ export const Header = ({
           height="130"
           width="130"
         />
-        {/* <div className="text-3xl font-bold">
-          <GradientText className="pink-blue">Vivid</GradientText>
-        </div> */}
       </div>
     </Link>
   );
@@ -58,19 +56,19 @@ export const Header = ({
     <nav>
       <ul className="items-center gap-2 row">
         <li>
-          <LinkButton href="/">Home</LinkButton>
+          <LinkButton href="#hero">Home</LinkButton>
         </li>
         <li>
-          <LinkButton href="/">Nosotros</LinkButton>
+          <LinkButton href="#about" >Nosotros</LinkButton>
         </li>
         <li>
-          <LinkButton href="/">Servicios</LinkButton>
+          <LinkButton href="#services">Servicios</LinkButton>
         </li>
         <li>
-          <LinkButton href="/">Equipo</LinkButton>
+          <LinkButton href="#team">Equipo</LinkButton>
         </li>
         <li>
-          <LinkButton href="/">Contacta</LinkButton>
+          <LinkButton href="#contact">Contacta</LinkButton>
         </li>
         {reloaded ? ( // Only show after first reload
           <li>
@@ -84,9 +82,9 @@ export const Header = ({
             </LinkButton>
           </li>
         ) : null}
-        <li className={`transition ${!nextSection && "hidden"}`}>
+        {/* <li className={`transition ${!nextSection && "hidden"}`}>
           <Button onClick={goToEmail}>Contacta</Button>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

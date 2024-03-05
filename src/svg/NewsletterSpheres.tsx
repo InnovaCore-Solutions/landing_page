@@ -1,4 +1,4 @@
-export const NewsletterSpheres = () => {
+export const NewsletterSpheres = ({ isDarkMode }: { isDarkMode: boolean }) => {
   return (
     <svg width="428" height="328" xmlns="http://www.w3.org/2000/svg">
       <defs>
@@ -16,7 +16,7 @@ export const NewsletterSpheres = () => {
         </radialGradient>
       </defs>
       <g fill="none" fillRule="evenodd">
-        <g fill="#FFF">
+        <g fill={isDarkMode ? "#FFF" : "#000"}>
           <ellipse fillOpacity=".04" cx="185" cy="15.576" rx="16" ry="15.576" />
           <ellipse fillOpacity=".24" cx="100" cy="68.402" rx="24" ry="23.364" />
           <ellipse fillOpacity=".12" cx="29" cy="251.231" rx="29" ry="28.231" />

@@ -11,6 +11,11 @@
   outline: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Custom utility classes */
 @layer utilities {
   /* Use the background as the text fill */
@@ -185,7 +190,7 @@
     border-radius: 7px;
     cursor: pointer;
     transition: all 0.3s;
-   color: white;
+    color: white;
   }
   
   .LinkedinPathW{
@@ -216,6 +221,100 @@
   .LinkedinBtn:hover .LinkedinsvgContainer {
     background-color: rgba(156, 156, 156, 0.466);
   }
+
+
+  .alertStyle-success {
+    width: 385px;
+    max-width: 385px; 
+    height: 50px;
+    top: 20px; 
+    right: 20px;
+    background-color: rgb(134 239 172);
+    color: rgb(20 83 45);
+    border-radius: 0.375rem;
+    position: fixed; 
+    display: flex;
+    justify-content: inline-block;
+    align-items: center;
+    padding:4px;
+    margin:2px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .alertStyle-warning {
+    width: 385px;
+    max-width: 385px; 
+    height: 50px;
+    top: 20px; 
+    right: 20px;
+    border-radius: 0.375rem;
+    background-color: rgb(239, 190, 134);
+    color: rgb(83, 66, 20);
+    position: fixed; 
+    display: flex;
+    justify-content: inline-block;
+    align-items: center;
+    padding:4px;
+    margin:2px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .alertStyle-error {
+    width: 385px;
+    max-width: 385px; 
+    height: 50px;
+    top: 20px; 
+    right: 20px;
+    background-color: rgb(239, 134, 134);
+    color: rgb(83, 20, 20);
+    border-radius: 0.375rem;
+    position: fixed; 
+    display: flex;
+    justify-content: inline-block;
+    align-items: center;
+    padding:4px;
+    margin:2px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideOut {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  .alert-out {
+    animation: slideOut 0.3s ease forwards;
+  }
+  .alert-in {
+    animation: slideIn 0.3s ease forwards;
+  }
+    
+  .alertStyle button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
   
-  
+  .alertStyle.show {
+    bottom: 20px;
+  }
+
+
 }

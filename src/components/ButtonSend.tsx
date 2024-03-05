@@ -7,7 +7,7 @@ interface ButtonSendProps {
 export const ButtonSend: React.FC<ButtonSendProps> = ({ type }) => {
   return (
     <button type={type} className="button-send">
-      <div className="svg-wrapper-1">
+      <div className="z-20 svg-wrapper-1">
         <div className="svg-wrapper">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,6 @@
 import { DetailedHTMLProps, HTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-// Built with Vivid (https://vivid.lol) ⚡️
 
 export const Section = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
@@ -38,7 +37,7 @@ export const Section = (
       <div
         {...divProps}
         className={twMerge(
-          `relative z-20 py-24 mx-auto col max-w-7xl ${
+          `relative py-24 mx-auto col max-w-7xl ${
             fullWidth ? "px-0" : "px-12"
           }`,
           props.className

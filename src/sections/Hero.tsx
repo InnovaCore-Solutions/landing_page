@@ -18,8 +18,9 @@ const Background = () => (
 export const Hero = () => {
   return (
     <Section
+      id="hero"
       gradients
-      className="items-center justify-center min-h-screen 2xl:min-h-[1000px] h-fit gap-16 col md:flex-row"
+      className="z-20 items-center justify-center min-h-screen 2xl:min-h-[1000px] h-fit gap-16 col md:flex-row"
     >
       <Background />
       {/* Text */}
@@ -42,9 +43,9 @@ export const Hero = () => {
       {/* Image */}
       <Demo
         data-aos="fade-left"
-        webmSrc="/videos/total.webm"
-        mp4Src="/videos/total.mp4"
-        alt="A video showing Vivid's functionality including command palette, style preview, code pane, and mouse resizing"
+        webmSrc="/videos/multiplatform.mp4" //total.webm
+        mp4Src="/videos/multiplatform.mp4"   //total.mp4
+        alt="A video showing ICS's functionality"
       />
     </Section>
   );

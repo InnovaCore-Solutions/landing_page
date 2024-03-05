@@ -21,7 +21,7 @@ const Home = ({
         <AboutUs/>
         <FeatureBlocks />
         <Testimonials />
-        <Contact />
+        <Contact isDarkMode={isDarkMode}/>
       </main>
       <Footer isDarkMode={isDarkMode} />
     </div>

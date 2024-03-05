@@ -32,7 +32,7 @@ const Block = ({ children }: { children: ReactNode }) => {
 
 export const FeatureBlocks = () => {
   return (
-    <Section className="gap-16 text-center">
+    <Section id="services" className="z-20 gap-16 text-center">
       {/* Header */}
       <div className="gap-4 col">
         <Title size="md">

@@ -19,10 +19,11 @@ const FeatureSection = ({
   center?: boolean;
 }) => (
   <Section
+    id="about"
     gradients
     grayer={grayer}
     fullWidth
-    className={`col items-center min-h-screen 2xl:min-h-[1000px] h-fit gap-16 col ${
+    className={`z-20 col items-center min-h-screen 2xl:min-h-[1000px] h-fit gap-16 col ${
       center ? "" : right ? "md:flex-row-reverse" : "md:flex-row"
     }`}
   >

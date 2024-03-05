@@ -2,10 +2,11 @@ import axios from "axios";
 import { DetailedHTMLProps, FormEvent, HTMLAttributes, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-import { Button } from "./Button";
 import { Input } from "./Input";
 import { TextArea } from "./TextArea";
 import { ButtonSend } from "./ButtonSend";
+import { Alert } from './Alert';
+
 
 export const ContactForm = (
   props: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> & {
@@ -17,6 +18,7 @@ export const ContactForm = (
   const [email, setEmail] = useState("");
   const [nombre, setNombre] = useState("");
   const [mensaje, setMensaje] = useState("");
+  const [showAlert, setShowAlert] = useState(false); 
 
   const [emailSubmitted, setEmailSubmitted] = useState(false);
 
@@ -27,11 +29,12 @@ export const ContactForm = (
     setEmail("");
     setNombre("");
     setMensaje("");
-    window.alert(`Email "${res.data.email}" submitted!`);
+    setShowAlert(true);
+    setTimeout(() => setShowAlert(false), 5000); 
   };
 
   const EmailMessage = () => (
-    <p className="mt-3 text-sm text-light">
+    <p className="z-20 mt-3 text-sm text-light">
       {emailSubmitted
         ? "Gracias por contactar con nosotros a través del formualrio!!"
         : "Estamos aquí para ayudarte."}
@@ -42,7 +45,7 @@ export const ContactForm = (
     <div {...divProps} className={twMerge("col","md:w-1/2", divProps.className)}>
       <form className="relative gap-2 md:gap-4" onSubmit={handleSubmit}>
 
-        <div className="relative">
+        <div className="z-20 relative">
           <Input
             type="text"
             className="w-full mb-10"
@@ -64,7 +67,7 @@ export const ContactForm = (
           <div className="absolute top-0 w-[8.5rem] h-[2px] bg-strong left-3" />
         </div>
 
-        <div className="relative">
+        <div className="z-20 relative">
           <Input
             type="email"
             className="w-full mb-10"
@@ -87,7 +90,7 @@ export const ContactForm = (
           <div className="absolute top-0 w-[3.5rem] h-[2px] bg-strong left-3" />
         </div>
 
-        <div className="relative">
+        <div className="z-20 relative">
           <TextArea
             className="w-full mb-10"
             placeholder="Mensaje"
@@ -109,6 +112,10 @@ export const ContactForm = (
          <ButtonSend type="submit" />
       </form>
       <EmailMessage />
+      {showAlert && (
+        <Alert type="error" message="El correo ha sido enviado correctamente!" />
+      )}
+
     </div>
     
   );

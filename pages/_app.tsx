@@ -10,7 +10,7 @@ import { useDarkMode, useEffectOnce } from "usehooks-ts";
 
 const siteTitle = "InnovaCore Solutions";
 const siteDescription =
-  "Make CSS styling a breeze with Vivid's in-browser visual editor that automatically updates your code.";
+  "Empresa apasionada de la tecnología, dedicada a ofrecer soluciones innovadoras y personalizadas en desarrollo de software";
 
 const App = ({ Component, pageProps }: AppProps) => {
   const { isDarkMode, toggle: toggleDarkMode } = useDarkMode();
@@ -46,8 +46,8 @@ const App = ({ Component, pageProps }: AppProps) => {
         />
         <link rel="icon" href="/icons/favicon.ico" />
         <meta
-          property="og:image"
-          content="https://vivid.lol/images/landing-page.png"
+          property="og:title"
+          content="ICS - InnovaCore Solutions"
         />
       </Head>
       <NextSeo
