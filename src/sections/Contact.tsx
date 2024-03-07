@@ -25,7 +25,7 @@ export const Contact = ({ isDarkMode }: { isDarkMode: boolean }) => {
           <p className="z-20 text-lg text-light mb-8">
               No dudes en ponerte en contacto con nosotros para colaborar o solicitar información adicional sobre nuestros servicios.
           </p>
-          <ContactForm id="newsletter-waitlist" /> 
+          <ContactForm isDarkMode={isDarkMode} id="newsletter-waitlist" /> 
         </div>
       </Card>
     </Section>

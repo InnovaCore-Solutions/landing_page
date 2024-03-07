@@ -9,7 +9,7 @@ import { Section } from "../components/Section";
 import { Title } from "../components/Title";
 
 
-const TestimonialImage = ({ src, alt }: { src: string; alt: string }) => {
+const MemberImage = ({ src, alt }: { src: string; alt: string }) => {
   return (
     <div className="absolute mx-auto -top-10">
       <Quote />
@@ -24,7 +24,7 @@ const TestimonialImage = ({ src, alt }: { src: string; alt: string }) => {
   );
 };
 
-const TestimonialText = ({
+const MemberText = ({
   quote,
   name,
   title,
@@ -56,7 +56,7 @@ const TestimonialText = ({
   );
 };
 
-const Testimonial = ({ children }: { children: ReactNode }) => {
+const Member = ({ children }: { children: ReactNode }) => {
   return (
     <Card className="items-center gap-6 p-12 pt-20 body-lg col text-medium">
       {children}
@@ -64,7 +64,7 @@ const Testimonial = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export const Testimonials = () => {
+export const Team = () => {
   return (
     <Section id="team" grayer className="z-20 gap-24 text-center">
       {/* Header */}
@@ -74,41 +74,41 @@ export const Testimonials = () => {
         </Title>
         <Details>Conoce a los talentos detrás del éxito.</Details>
       </div>
-      {/* Testimonials */}
+      {/* Member */}
       <div className="gap-20 md:gap-6 col md:row">
-        {/* Testimonial 1 */}
-        <Testimonial>
-          <TestimonialImage src="/images/valentin.jpg" alt="Valentin Palonsky" />
-          <TestimonialText
+        {/* Member 1 */}
+        <Member>
+          <MemberImage src="/images/valentin.jpg" alt="Valentin Palonsky" />
+          <MemberText
             quote="Organización y estructura para guiar equipos hacia el logro de objetivos."
             name="Valentin Palonsky"
             title="Project"
             handle="Manager"
             link="https://www.linkedin.com/in/valent%C3%ADn-guitart-palonsky-637735145/"
           />
-        </Testimonial>
-        {/* Testimonial 2 */}
-        <Testimonial>
-          <TestimonialImage src="/images/fran.jpg" alt="Fran Martín" />
-          <TestimonialText
+        </Member>
+        {/* Member 2 */}
+        <Member>
+          <MemberImage src="/images/fran.jpg" alt="Fran Martín" />
+          <MemberText
             quote="Forjando el camino hacia el éxito transformando ideas en realidad"
             name="Fran Martín"
             title="Fundador" 
             handle="CEO"
             link="https://www.linkedin.com/in/fran-martin-ag/"
           />
-        </Testimonial>
-        {/* Testimonial 3 */}
-        <Testimonial>
-          <TestimonialImage src="/images/victor.png" alt="Victor Gómez" />
-          <TestimonialText
+        </Member>
+        {/* Member 3 */}
+        <Member>
+          <MemberImage src="/images/victor.png" alt="Victor Gómez" />
+          <MemberText
             quote="Cree en ti mismo y en tus capacidades, no tengas miedo de tomar riesgos"
             name="Victor Gómez"
             title="Senior"
             handle="Developer"
             link="https://www.linkedin.com/in/valent%C3%ADn-guitart-palonsky-637735145/"
           />
-        </Testimonial>
+        </Member>
       </div>
     </Section>
   );

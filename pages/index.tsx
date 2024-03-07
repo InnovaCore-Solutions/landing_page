@@ -3,7 +3,7 @@ import { Footer } from "../src/sections/Footer";
 import { Header } from "../src/sections/Header";
 import { Hero } from "../src/sections/Hero";
 import { Contact } from "../src/sections/Contact";
-import { Testimonials } from "../src/sections/Testimonials";
+import { Team } from "../src/sections/Team";
 import { AboutUs } from "../src/sections/AboutUs";
 
 const Home = ({
@@ -20,7 +20,7 @@ const Home = ({
         <Hero />
         <AboutUs/>
         <FeatureBlocks />
-        <Testimonials />
+        <Team />
         <Contact isDarkMode={isDarkMode}/>
       </main>
       <Footer isDarkMode={isDarkMode} />

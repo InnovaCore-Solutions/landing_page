@@ -20,7 +20,7 @@ const FeatureSection = ({
 }) => (
   <Section
     id="about"
-    gradients
+    gradients2
     grayer={grayer}
     fullWidth
     className={`z-20 col items-center min-h-screen 2xl:min-h-[1000px] h-fit gap-16 col ${

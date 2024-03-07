@@ -7,9 +7,26 @@ export const Section = (
     grayer?: boolean;
     fullWidth?: boolean;
     gradients?: boolean;
+    gradients2?: boolean;
   }
 ) => {
-  const { grayer, fullWidth, gradients, ...divProps } = props;
+  const { grayer, fullWidth, gradients, gradients2, ...divProps } = props;
+
+
+  const Gradients = () => (
+    <>
+      <div className="absolute inset-0 z-10 backdrop-blur-[200px]" />
+      <NeonCircle className="md:-left-[28rem] -left-40 -top-40 md:-top-[28rem] bg-neon-pink" />
+      <NeonCircle className="md:-right-[28rem] -right-40 -bottom-40 md:-bottom-[28rem] bg-neon-blue" />
+    </>
+  );
+
+  const Gradients2 = () => (
+    <>
+      <div className="absolute inset-0 z-10 backdrop-blur-[200px]" />
+      <NeonCircle className="md:-right-[28rem] -right-40 -top-40 md:-top-[28rem] bg-neon-blue " />
+    </>
+  );
 
   const NeonCircle = ({ className }: { className: string }) => (
     <div
@@ -19,14 +36,16 @@ export const Section = (
       )}
     />
   );
-
-  const Gradients = () => (
-    <>
-      <div className="absolute inset-0 z-10 backdrop-blur-[200px]" />
-      <NeonCircle className="md:-left-[28rem] -left-40 -top-40 md:-top-[28rem] bg-neon-pink" />
-      <NeonCircle className="md:-right-[28rem] -right-40 -bottom-40 md:-bottom-[28rem] bg-neon-blue" />
-    </>
+  const NeonCircle2 = ({ className }: { className: string }) => (
+    <div
+      className={twMerge(
+        "absolute opacity-60 dark:opacity-30 rounded-full w-20 h-20 md:w-[20rem] md:h-[20rem]",
+        className
+      )}
+    />
   );
+
+
 
   return (
     <section
@@ -44,6 +63,7 @@ export const Section = (
         )}
       />
       {gradients ? <Gradients /> : null}
+      {gradients2 ? <Gradients2 /> : null}
     </section>
   );
 };
