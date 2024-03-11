@@ -8,7 +8,7 @@ export const Footer = ({ isDarkMode }: { isDarkMode: boolean }) => {
       <div className="items-center justify-between px-10 py-4 mx-auto sm:px-6 row max-w-7xl">
         <div className="items-center gap-4 row">
           <Image
-            src={isDarkMode ? "/images/logo_lblanco.png" : "/images/logo_lnegro.png"}
+            src={isDarkMode ? "/landing_page/images/logo_lblanco.png" : "/landing_page/images/logo_lnegro.png"}
             alt="ICS Logo"
             height="100"
             width="100"

@@ -43,7 +43,7 @@ export const Header = ({
     <Link href="/">
       <div className="items-center block gap-1 row">
         <Image
-          src={isDarkMode ? "/images/logo_lblanco.png" : "/images/logo_lnegro.png"}
+          src={isDarkMode ? "/landing_page/images/logo_lblanco.png" : "/landing_page/images/logo_lnegro.png"}
           alt="ICS logo"
           height="130"
           
