@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: "export",
+  output: "export", 
   // i18n: {
   //   locales: ["en","es"],
   //   defaultLocale: "es",
