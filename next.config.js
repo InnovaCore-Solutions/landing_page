@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   output: "export",
-  basePath: "/"
+  basePath: '',
   // i18n: {
   //   locales: ["en","es"],
   //   defaultLocale: "es",
