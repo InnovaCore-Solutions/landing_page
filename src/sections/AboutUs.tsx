@@ -105,8 +105,8 @@ export const AboutUs = () => {
         <Details>Honestidad, Franqueza, Fidelidad Colaboración</Details>
       </Text>
       <FeatureDemo
-        webmSrc="/landing_page/videos/coding.mp4"
-        mp4Src="/landing_page/videos/coding.mp4"
+        webmSrc="/videos/coding.mp4"
+        mp4Src="/videos/coding.mp4"
         bumpLeft
         className="pink-blue"
         alt="Coding"

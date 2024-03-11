@@ -78,7 +78,7 @@ export const Team = () => {
       <div className="gap-20 md:gap-6 col md:row">
         {/* Member 1 */}
         <Member>
-          <MemberImage src="/landing_page/images/valentin.jpg" alt="Valentin Palonsky" />
+          <MemberImage src="/images/valentin.jpg" alt="Valentin Palonsky" />
           <MemberText
             quote="Organización y estructura para guiar equipos hacia el logro de objetivos."
             name="Valentin Palonsky"
@@ -89,7 +89,7 @@ export const Team = () => {
         </Member>
         {/* Member 2 */}
         <Member>
-          <MemberImage src="/landing_page/images/fran.jpg" alt="Fran Martín" />
+          <MemberImage src="/images/fran.jpg" alt="Fran Martín" />
           <MemberText
             quote="Forjando el camino hacia el éxito transformando ideas en realidad"
             name="Fran Martín"
@@ -100,7 +100,7 @@ export const Team = () => {
         </Member>
         {/* Member 3 */}
         <Member>
-          <MemberImage src="/landing_page/images/victor.png" alt="Victor Gómez" />
+          <MemberImage src="/images/victor.png" alt="Victor Gómez" />
           <MemberText
             quote="Cree en ti mismo y en tus capacidades, no tengas miedo de tomar riesgos"
             name="Victor Gómez"

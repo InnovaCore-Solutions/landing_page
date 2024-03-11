@@ -45,7 +45,7 @@ const App = ({ Component, pageProps }: AppProps) => {
           sizes="180x180"
           href="/apple-touch-icon.png"
         />
-        <link rel="icon" href="/landing_page/icons/favicon.ico" />
+        <link rel="icon" href="/icons/favicon.ico" />
         <meta
           property="og:title"
           content="ICS - InnovaCore Solutions"

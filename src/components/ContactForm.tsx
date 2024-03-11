@@ -51,7 +51,7 @@ export const ContactForm = (
     // Si todos los campos requeridos están llenos, envía el formulario
     try{
       setEmailSubmitted(true);
-      const res = await axios.post("/landing_page/api/waitlist", { email, nombre, mensaje });
+      const res = await axios.post("/api/waitlist", { email, nombre, mensaje });
       setEmail("");
       setNombre("");
       setMensaje("");
