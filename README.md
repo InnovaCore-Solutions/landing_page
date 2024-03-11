@@ -1,4 +1,4 @@
 # landing_page
-Landing page Company InnovaCore Solutions
+Landing page Company InnovaCore Solutions -> PROD
 
-npm run dev
+Push to main to deploy changes

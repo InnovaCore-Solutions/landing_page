@@ -19,7 +19,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "public/scripts/darkModeScript.js"
+    "public/scripts/darkModeScript.js",
+    "pages/api/waitlist.js"
   ],
   "exclude": ["node_modules"]
 }
