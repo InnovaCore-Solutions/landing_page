@@ -22,7 +22,7 @@ const Home = ({
         <Hero />
         <AboutUs/>
         <FeatureBlocks />
-        <Team />
+        {/* <Team /> */}
         <Contact isDarkMode={isDarkMode}/>
       </main>
       <Footer isDarkMode={isDarkMode} />
