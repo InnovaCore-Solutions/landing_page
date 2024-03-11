@@ -8,6 +8,7 @@ import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import { useDarkMode, useEffectOnce } from "usehooks-ts";
 
+
 const siteTitle = "InnovaCore Solutions";
 const siteDescription =
   "Empresa apasionada de la tecnología, dedicada a ofrecer soluciones innovadoras y personalizadas en desarrollo de software";

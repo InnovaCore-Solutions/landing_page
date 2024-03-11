@@ -1,0 +1,109 @@
+{
+  "Header": {
+    "logoUrlDark": "/landing_page/images/logo_lnegro.png",
+    "logoUrlLight": "/landing_page/images/logo_lblanco.png"
+  },
+  "Hero": {
+    "title": "/landing_page/images/logo_lnegro.png",
+    "paragraph": "/landing_page/images/logo_lblanco.png",
+    "macBar": "/landing_page/images/logo_lnegro.png",
+    "video": "/landing_page/images/logo_lblanco.png"
+  },
+  "About": {
+    "title": "Sobre Nosotros",
+    "paragraph": "Somos una empresa apasionada de la tecnología, dedicada a ofrecer soluciones innovadoras y personalizadas en desarrollo de software y consultoría. Con un enfoque centrado en el cliente, nuestro equipo experto trabaja para impulsar el éxito de tu negocio a través de la tecnología.",
+    "subtitle": "Porque Nosotros?",
+    "why": [
+      "Honestidad",
+      "Franqueza",
+      "Fidelidad",
+      "Colaboración"
+    ],
+    "macBar": "/landing_page/images/logo_lnegro.png",
+    "video": "/landing_page/images/logo_lblanco.png"
+  },
+  "Services": [
+    {
+      "icon": "fa fa-cogs",
+      "name": "AI Integration Solutions",
+      "text": "Unlock the power of artificial intelligence with our seamless integration solutions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa-light fa-laptop-code",
+      "name": "SAAS Development",
+      "text": "Take your business to new heights with our SAAS development expertise. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-database",
+      "name": "Data Management Solutions",
+      "text": "Efficiently manage and leverage your data with our cutting-edge solutions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-globe",
+      "name": "Multilingual Support",
+      "text": "Expand your reach and connect with global audiences with our multilingual support services. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-briefcase",
+      "name": "Consulting Services",
+      "text": "Navigate the complexities of digital transformation with our expert consulting services. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa-light fa-chart-line",
+      "name": "Performance Analytics",
+      "text": "Gain actionable insights and drive growth with our advanced performance analytics solutions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/v.jpg",
+      "name": "Victor Gómez",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/f.jpg",
+      "name": "Fran Martín",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/va.jpg",
+      "name": "Valentin P.G.",
+      "job": "Senior Designer"
+    }
+  ],
+  "Contact": {
+    "address": "4321 California St, San Francisco, CA 12345 ",
+    "phone": "+1 123 456 1234",
+    "email": "info@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ],
+  "Footer": {
+    "logoUrlDark": "/landing_page/images/logo_lnegro.png",
+    "logoUrlLight": "/landing_page/images/logo_lblanco.png"
+  }
+  
+}

@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useEffectOnce, useEventListener } from "usehooks-ts";
 
 import { Button } from "../components/Button";
 import { LinkButton } from "../components/LinkButton";
 import { Moon, Sun } from "../svg/DarkModeIcons";
+
 
 export const Header = ({
   isDarkMode,
@@ -38,7 +39,6 @@ export const Header = ({
   };
 
 
-
   const Logo = ({ isDarkMode }: { isDarkMode: boolean }) => (
     <Link href="/">
       <div className="items-center block gap-1 row">
@@ -46,6 +46,7 @@ export const Header = ({
           src={isDarkMode ? "/images/logo_lblanco.png" : "/images/logo_lnegro.png"}
           alt="ICS logo"
           height="130"
+          
           width="130"
         />
       </div>

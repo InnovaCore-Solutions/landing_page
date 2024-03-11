@@ -6,12 +6,14 @@ import { Contact } from "../src/sections/Contact";
 import { Team } from "../src/sections/Team";
 import { AboutUs } from "../src/sections/AboutUs";
 
+
 const Home = ({
-  isDarkMode,
+  isDarkMode, 
   toggleDarkMode,
 }: {
   isDarkMode: boolean;
   toggleDarkMode: () => void;
+
 }) => {
   return (
     <div className="overflow-hidden col text-strong">
