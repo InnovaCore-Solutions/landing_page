@@ -65,13 +65,13 @@ export const Header = ({
         <li>
           <LinkButton href="#services">Servicios</LinkButton>
         </li>
-        <li>
+        {/* <li>
           <LinkButton href="#team">Equipo</LinkButton>
-        </li>
+        </li> */}
         <li>
           <LinkButton href="#contact">Contacta</LinkButton>
         </li>
-        {reloaded ? ( // Only show after first reload
+        {reloaded ? ( 
           <li>
             <LinkButton
               button
