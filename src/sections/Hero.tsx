@@ -43,8 +43,8 @@ export const Hero = () => {
       {/* Image */}
       <Demo
         data-aos="fade-left"
-        webmSrc="/videos/multiplatform.mp4" //total.webm
-        mp4Src="/videos/multiplatform.mp4"   //total.mp4
+        webmSrc="/landing_page/videos/multiplatform.mp4" //total.webm
+        mp4Src="/landing_page/videos/multiplatform.mp4"   //total.mp4
         alt="A video showing ICS's functionality"
       />
     </Section>
