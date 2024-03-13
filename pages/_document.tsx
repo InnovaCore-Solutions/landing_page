@@ -6,7 +6,7 @@ const Document = () => {
     <Html>
       <Head />
       <body>
-        <Script strategy="beforeInteractive" src="/sripts/darkModeScript.js" />
+        <Script strategy="beforeInteractive" src="/scripts/darkModeScript.js" />
         <Main />
         <NextScript />
       </body>
