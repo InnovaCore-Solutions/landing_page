@@ -1,41 +1,25 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
+import { Resend } from 'resend';
+
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  if (req.method === 'POST') {
-    const { email, nombre, mensaje } = req.body;
-
-    // Configuración del transporte de correo
-    const transporter = nodemailer.createTransport({
-      service: "Gmail",
-      auth: {
-        user: "franmartinaguilar@gmail.com", // Cambia esto por tu dirección de correo electrónico
-        pass: "kixf sofi ckvf ntxy", // Cambia esto por tu contraseña de correo electrónico
-      },
+  const { email, nombre, mensaje } = req.body;
+  const resend = new Resend('re_Ng8UgWvv_CUSdjdeuZxonuQSqm4zvZnWg');
+  
+  try {
+    await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: 'franmartinaguilar@gmail.com',
+      subject: 'Consulting ICS',
+      html: `<p>Nombre: ${nombre}<br>Email: ${email}<br>Mensaje: ${mensaje}</p>`
     });
-
-    // Configuración del correo electrónico
-    const mailOptions = {
-      from: 'franmartinaguilar@gmail.com', // Dirección de correo electrónico del remitente
-      to: "franmartinaguilar@gmail.com", // Dirección de correo electrónico del destinatario
-      subject: "Consulting ICS",
-      text: `Correo enviado por: ${email}\nNombre: ${nombre}\nMensaje: ${mensaje}` , // Cuerpo del correo electrónico
-    };
-
-    // Envío del correo electrónico
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        console.error("Error al enviar el correo electrónico:", error);
-        res.status(500).json({ error: "Error al enviar el correo electrónico" });
-      } else {
-        console.log("Correo electrónico enviado:", info.response);
-        res.status(200).json({ message: "Correo electrónico enviado exitosamente" });
-      }
-    });
-  } else {
-    res.setHeader('Allow', ['POST']); // Set allowed methods
-    res.status(405).end(`Method ${req.method} Not Allowed`); // Respond with 405 Method Not Allowed
+    res.status(200).json({ message: 'Email sent successfully' });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).json({ error: 'Error sending email' });
   }
 };
+
 
 export default handler;
