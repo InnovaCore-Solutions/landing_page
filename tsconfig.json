@@ -20,7 +20,7 @@
     "**/*.ts",
     "**/*.tsx",
     "public/scripts/darkModeScript.js",
-    "pages/api/waitlist.js"
+    "public/scripts/waitlist.ts"
   ],
   "exclude": ["node_modules"]
 }
