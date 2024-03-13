@@ -52,6 +52,7 @@ export const ContactForm = (
     try{
       setEmailSubmitted(true);
       const res = await axios.post("/api/waitlist", { email, nombre, mensaje });
+      console.log(res);
       setEmail("");
       setNombre("");
       setMensaje("");
